@@ -36,6 +36,9 @@ add_dataset <- function(name) {
     file = taf.boot.path(glue("{name}.R"))
   )
 
+  git2r::add(".", taf.boot.path(glue("{name}.R")))
+  git2r::commit(".", glue("added TAF dataset {name}.R"))
+
   message(
     "to add dataset to analysis run:\n",
     "taf.roxygenise()"
