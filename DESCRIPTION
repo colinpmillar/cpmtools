@@ -1,6 +1,6 @@
 Package: cpmtools
 Title: Miscellaneous Functions by 'Colin Millar'
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R:
     person(given = "Colin",
            family = "Millar",
