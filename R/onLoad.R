@@ -3,7 +3,7 @@
   # set some default SG options
   opts <-
     c(
-      cpmtools.quick_help_path = file.path(path.expand("~"), "quick-help")
+      cpmtools.quick_help_path = "'.'"
     )
 
   for (i in setdiff(names(opts), names(options()))) {

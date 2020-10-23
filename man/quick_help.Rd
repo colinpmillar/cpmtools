@@ -32,5 +32,5 @@ if(interactive()){
 }
 \seealso{
 \code{\link[icesTAF]{taf.skeleton}}
-\code{\link[git2r]{init}},\code{\link[git2r]{add}},\code{\link[git2r]{c("commit", "commit")}}
+\code{\link[git2r]{init}},\code{\link[git2r]{add}},\code{\link[git2r]{commit}}
 }

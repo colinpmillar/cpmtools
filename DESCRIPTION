@@ -8,7 +8,7 @@ Authors@R:
            email = "colin.millar@ices.dk",
            comment = c(ORCID = "0000-0003-0603-0203"))
 Description: Miscellaneous functions.
-Imports: formatR, sinew
+Imports: formatR, sinew, icesTAF, git2r, jsonlite
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

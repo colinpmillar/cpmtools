@@ -19,13 +19,14 @@
 #'
 #' @seealso
 #'  \code{\link[icesTAF]{taf.skeleton}}
-#'  \code{\link[git2r]{init}},\code{\link[git2r]{add}},\code{\link[git2r]{c("commit", "commit")}}
+#'  \code{\link[git2r]{init}},\code{\link[git2r]{add}},\code{\link[git2r]{commit}}
 #'
 #' @rdname quick_help
 #'
 #' @export
 #' @importFrom icesTAF taf.skeleton
 #' @importFrom git2r init add commit
+#' @importFrom jsonlite toJSON
 
 quick_help <- function(person, project, path = getOption("cpmtools.quick_help_path")) {
   # create an empty project directory for some quick helping :)
@@ -47,7 +48,7 @@ quick_help <- function(person, project, path = getOption("cpmtools.quick_help_pa
   }
 
   # create initial taf project
-  icesTAF::taf.skeleton(new_dir)
+  taf.skeleton(new_dir)
 
   gitignore <- file.path(new_dir, ".gitignore")
   if (!file.exists(gitignore)) {
@@ -72,5 +73,5 @@ quick_help <- function(person, project, path = getOption("cpmtools.quick_help_pa
     git2r::commit(new_dir, "initial commit", all = TRUE)
   }
 
-  open.dir(new_dir)
+  open_dir(new_dir)
 }

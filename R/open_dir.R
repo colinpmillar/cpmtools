@@ -1,4 +1,4 @@
-#' @title open.dir
+#' @title open_dir
 #' @description FUNCTION_DESCRIPTION
 #' @param dir PARAM_DESCRIPTION, Default: '.'
 #' @return OUTPUT_DESCRIPTION
@@ -9,10 +9,10 @@
 #'  #EXAMPLE1
 #'  }
 #' }
-#' @rdname open.dir
+#' @rdname open_dir
 #' @export
 
-open.dir <- function(dir = ".") {
+open_dir <- function(dir = ".") {
   if (interactive()) {
     if (.Platform$OS.type == "windows") {
       shell.exec(dir)
