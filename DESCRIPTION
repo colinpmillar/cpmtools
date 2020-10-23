@@ -1,0 +1,15 @@
+Package: cpmtools
+Title: Miscellaneous Functions by 'Colin Millar'
+Version: 0.0.0.9000
+Authors@R:
+    person(given = "Colin",
+           family = "Millar",
+           role = c("aut", "cre"),
+           email = "colin.millar@ices.dk",
+           comment = c(ORCID = "0000-0003-0603-0203"))
+Description: Miscellaneous functions.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
