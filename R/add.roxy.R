@@ -18,7 +18,7 @@
 #'  \code{\link[sinew]{makeOxygen}}
 #'  \code{\link[formatR]{tidy_source}}
 #'
-#' @rdname obj
+#' @rdname add.roxy
 #'
 #' @export
 #' @importFrom sinew makeOxygen
@@ -43,12 +43,13 @@ add.roxy <- function(obj, file = FALSE) {
       warning(file, " exists, please delete if you want to overwrite.", call. = FALSE)
       return(invisible(FALSE))
     }
+    message("removing ", func_name, " from .GlobalEnv to avoid conflicts.")
+    rm(list = func_name, envir = globalenv())
   } else {
     file <- ""
   }
 
   cat(roxy, "\n\n", code$text.tidy, "\n", file = file, append = FALSE, sep = "")
-  message("removing ", func_name, " from .GlobalEnv to avoid conflicts.")
-  rm(list = func_name, envir = globalenv())
+
   invisible(TRUE)
 }
