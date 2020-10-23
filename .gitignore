@@ -39,3 +39,5 @@ vignettes/*.pdf
 .Renviron
 
 cpmtools.code-workspace
+
+new_func.R
