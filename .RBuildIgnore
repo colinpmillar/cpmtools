@@ -1,3 +1,4 @@
 ^LICENSE$
 ^cpmtools.code-workspace$
 ^new_func.R$
+^\.travis\.yml$
