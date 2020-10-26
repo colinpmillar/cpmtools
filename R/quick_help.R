@@ -50,21 +50,8 @@ quick_help <- function(person, project, path = getOption("cpmtools.quick_help_pa
   # create initial taf project
   taf.skeleton(new_dir)
 
-  gitignore <- file.path(new_dir, ".gitignore")
-  if (!file.exists(gitignore)) {
-    cat(
-      c(
-        "# vs code workspace",
-        "*.code-workspace",
-        "",
-        "# TAF folders",
-        "/bootstrap/data/", "/bootstrap/software/", "/bootstrap/library/",
-        "/data/", "/model/", "/output/", "/report/", "/shiny/"
-      ),
-      sep = "\n",
-      file = gitignore
-    )
-  }
+  # add the taf .gitignore file
+  taf_gitignore(new_dir)
 
   # make a git repo
   if (!dir.exists(file.path(new_dir, ".git"))) {
