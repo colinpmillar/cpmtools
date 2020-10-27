@@ -7,6 +7,7 @@
 #' @param fit a fitted object from a SAM model fit.
 #' @param dir an optional directory name.
 #'
+#' @importFrom icesTAF xtab2taf
 #'
 #' @export
 write_sam_upload <- function(fit, dir = NULL) {
@@ -79,6 +80,12 @@ write_sam_upload <- function(fit, dir = NULL) {
       )
     )
   names(stock) <- sapply(stock, "[[", "valueType")
+
+  stock <-
+    lapply(stock, function(x) {
+      x$values <- icesTAF::xtab2taf(x$values)
+      x
+    })
 
   stock
 }
