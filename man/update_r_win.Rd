@@ -6,14 +6,15 @@
 \usage{
 update_r_win(check.only = TRUE)
 }
+\arguments{
+\item{check.only}{if TRUE R binaries are not downloaded and installed,
+only a check is performed}
+}
 \value{
 OUTPUT_DESCRIPTION
 }
 \description{
 FUNCTION_DESCRIPTION
-}
-\details{
-DETAILS
 }
 \examples{
 \dontrun{

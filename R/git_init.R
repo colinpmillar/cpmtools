@@ -16,7 +16,7 @@
 #'   git_init(commit = FALSE)
 #' }
 #' @seealso
-#'  \code{\link[git2r]{init}},\code{\link[git2r]{add}},\code{\link[git2r]{c("commit", "commit")}}
+#'  \code{\link[git2r]{init}},\code{\link[git2r]{add}},\code{\link[git2r]{commit}}
 #' @rdname git_init
 #'
 #' @importFrom git2r init add commit

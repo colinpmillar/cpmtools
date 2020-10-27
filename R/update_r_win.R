@@ -1,8 +1,11 @@
 #' @title update_r_win
 #' @description FUNCTION_DESCRIPTION
-
+#'
+#' @param check.only if TRUE R binaries are not downloaded and installed,
+#'   only a check is performed
+#'
 #' @return OUTPUT_DESCRIPTION
-#' @details DETAILS
+#'
 #' @examples
 #' \dontrun{
 #' if(interactive()){
@@ -10,6 +13,9 @@
 #'  }
 #' }
 #' @rdname update_r_win
+#'
+#' @importFrom utils download.file installed.packages
+#'
 #' @export
 
 update_r_win <- function(check.only = TRUE) {
