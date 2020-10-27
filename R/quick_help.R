@@ -50,15 +50,8 @@ quick_help <- function(person, project, path = getOption("cpmtools.quick_help_pa
   # create initial taf project
   taf.skeleton(new_dir)
 
-  # add the taf .gitignore file
-  taf_gitignore(new_dir)
-
   # make a git repo
-  if (!dir.exists(file.path(new_dir, ".git"))) {
-    git2r::init(new_dir)
-    git2r::add(new_dir, "*")
-    git2r::commit(new_dir, "initial commit", all = TRUE)
-  }
+  git_init(new_dir)
 
   open_dir(new_dir)
 }
