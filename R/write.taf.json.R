@@ -31,6 +31,6 @@ write.taf.json <- function(x, file = NULL, dir = NULL, ...) {
   jsonlite::write_json(
     x,
     path = file,
-    pretty = TRUE, auto_unbox = TRUE, ...
+    pretty = TRUE, auto_unbox = TRUE, digits = 9, ...
   )
 }
