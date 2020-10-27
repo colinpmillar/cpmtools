@@ -2,6 +2,7 @@
 
 export(add.roxy)
 export(add_dataset)
+export(git_init)
 export(installed_packages)
 export(open_dir)
 export(quick_help)
