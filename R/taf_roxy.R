@@ -28,7 +28,7 @@ taf_roxy <- function(dataset) {
       "#' @tafAccess Public",
       "#' @tafSource script",
       "",
-      "library(icesTAF)"
+      "library(icesTAF)",
       ""
     )
 
