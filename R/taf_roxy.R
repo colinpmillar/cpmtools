@@ -26,8 +26,11 @@ taf_roxy <- function(dataset) {
       "#' @tafOriginator ICES",
       "#' @tafYear 2020",
       "#' @tafAccess Public",
-      "#' @tafSource script"
+      "#' @tafSource script",
+      "",
+      "library(icesTAF)"
+      ""
     )
 
-  cat(txt, sep = "/n", file = taf.boot.path(paste0(dataset, ".R")))
+  cat(txt, sep = "\n", file = taf.boot.path(paste0(dataset, ".R")))
 }
