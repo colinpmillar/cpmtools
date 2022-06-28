@@ -1,6 +1,6 @@
 Package: cpmtools
 Title: Miscellaneous Functions by 'Colin Millar'
-Version: 0.0.0.9001
+Version: 0.0.0.9002
 Authors@R:
     person(given = "Colin",
            family = "Millar",
@@ -8,9 +8,10 @@ Authors@R:
            email = "colin.millar@ices.dk",
            comment = c(ORCID = "0000-0003-0603-0203"))
 Description: Miscellaneous functions.
-Imports: utils, icesTAF, formatR, sinew, git2r, jsonlite, glue, graphics, stats
+Imports: utils, TAF, formatR, sinew, git2r, jsonlite,
+          glue, graphics, stats
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.0

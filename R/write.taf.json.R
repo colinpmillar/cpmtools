@@ -28,7 +28,7 @@ write.taf.json <- function(x, file = NULL, dir = NULL, ...) {
   if (!is.null(dir) && file != "") {
     file <- file.path(sub("[/\\]+$", "", dir), file)
   }
-  jsonlite::write_json(
+  write_json(
     x,
     path = file,
     pretty = TRUE, auto_unbox = TRUE, digits = 9, ...

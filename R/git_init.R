@@ -26,15 +26,15 @@
 git_init <- function(path = ".", commit = TRUE) {
   # make a git repo
   if (!dir.exists(file.path(path, ".git"))) {
-    git2r::init(path)
+    init(path)
 
     # add a git ignore file
     taf_gitignore()
 
     # stage and commit
-    git2r::add(path, "*")
+    add(path, "*")
     if (commit) {
-      git2r::commit(path, "initial commit", all = TRUE)
+      commit(path, "initial commit", all = TRUE)
     }
   }
 }

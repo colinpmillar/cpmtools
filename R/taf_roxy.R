@@ -12,6 +12,9 @@
 #' }
 #' }
 #' @rdname taf_roxy
+#'
+#' @importFrom TAF taf.boot.path
+#'
 #' @export
 
 taf_roxy <- function(dataset) {

@@ -14,5 +14,5 @@
 #' @export
 
 sourceTAF2 <- function(script, quiet = FALSE) {
-  system2("Rscript", glue("-e icesTAF::sourceTAF('{script}')"))
+  system2("Rscript", sprintf("-e TAF::sourceTAF('%s')", script))
 }

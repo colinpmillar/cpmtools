@@ -15,6 +15,7 @@
 #' @rdname update_r_win
 #'
 #' @importFrom utils download.file installed.packages
+#' @importFrom glue glue
 #'
 #' @export
 

@@ -18,13 +18,13 @@
 #' }
 #'
 #' @seealso
-#'  \code{\link[icesTAF]{taf.skeleton}}
+#'  \code{\link[TAF]{taf.skeleton}}
 #'  \code{\link[git2r]{init}},\code{\link[git2r]{add}},\code{\link[git2r]{commit}}
 #'
 #' @rdname quick_help
 #'
 #' @export
-#' @importFrom icesTAF taf.skeleton
+#' @importFrom TAF taf.skeleton
 #' @importFrom git2r init add commit
 #' @importFrom jsonlite toJSON
 
